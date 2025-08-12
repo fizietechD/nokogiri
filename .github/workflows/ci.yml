@@ -509,7 +509,7 @@ jobs:
         with:
           ruby-version: "${{matrix.ruby}}"
           apt-get: "libxml2-dev libxslt1-dev pkg-config"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: generic-gem
           path: gems
@@ -530,7 +530,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "${{matrix.ruby}}"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: generic-gem
           path: gems
@@ -552,7 +552,7 @@ jobs:
         with:
           ruby-version: "${{matrix.ruby}}"
           mingw: "libxml2 libxslt"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: generic-gem
           path: gems
@@ -608,7 +608,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "${{matrix.ruby}}"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: cruby-x86_64-linux-gnu-gem
           path: gems
@@ -643,7 +643,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: cruby-${{ matrix.platform }}-gem
           path: gems
@@ -677,7 +677,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "${{ matrix.ruby }}"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: cruby-${{ matrix.platform }}-gem
           path: gems
@@ -697,7 +697,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "${{matrix.ruby}}"
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: cruby-x64-mingw-ucrt-gem
           path: gems
@@ -733,7 +733,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v5
         with:
           name: jruby-gem
           path: gems
