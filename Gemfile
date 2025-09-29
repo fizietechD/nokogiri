@@ -25,7 +25,7 @@ group :development do
 
   # rubocop
   unless RUBY_PLATFORM == "java" || ENV["APPVEYOR"]
-    gem "standard", "1.50.0"
+    gem "standard", "1.51.1"
     gem "rubocop-minitest", "0.38.2"
     gem "rubocop-packaging", "0.6.0"
     gem "rubocop-rake", "0.7.1"
