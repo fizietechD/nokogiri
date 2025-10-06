@@ -25,7 +25,7 @@ group :development do
 
   # rubocop
   unless RUBY_PLATFORM == "java" || ENV["APPVEYOR"]
-    gem "standard", "1.50.0"
+    gem "standard", "1.51.1"
     gem "rubocop-minitest", "0.38.2"
     gem "rubocop-packaging", "0.6.0"
     gem "rubocop-rake", "0.7.1"
@@ -36,5 +36,5 @@ end
 # `bundle config set --local without rdoc`
 # Then re-run `bundle install`.
 group :rdoc do
-  gem "rdoc", "6.14.2" unless RUBY_PLATFORM == "java" || ENV["CI"]
+  gem "rdoc", "6.15.0" unless RUBY_PLATFORM == "java" || ENV["CI"]
 end
